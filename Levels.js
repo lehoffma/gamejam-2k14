@@ -165,9 +165,11 @@ Level2.prototype.reset = function () {
 
 function Level3() {
 
-    this.joachimclapping = game.add.sprite(18000, 1100, "clapping");
+    this.joachimclapping = game.add.sprite(17800, 1100, "clapping");
     this.joachimclapping.animations.add("klatschen");
     this.joachimclapping.animations.play("klatschen", 8, true);
+
+    game.world.bringToTop(this.joachimclapping);
 
     this.level = 2;
     // BACKGROUND COLOR
@@ -210,6 +212,7 @@ function Level3() {
     Obstacles[19] = new Car(13000, 1450, "van");
     Obstacles[20] = new Rampe(16000, 1450);
     Obstacles[21] = new Box(16300, 1450);
+    Obstacles[22] = new Poller(17900, 1450);
 
     this.win = new WinFlag(18000, 1450);
 }

@@ -39,11 +39,11 @@ function Merkel(_x, _y)
 Merkel.prototype.handleInput = function ()
 {
     if (arrowkeys.down.isDown) {
-        if (this.onGround)
+        //if (this.onGround)
         this.Slow();
     }
     if (arrowkeys.up.isDown) {
-        if(this.onGround)
+        //if(this.onGround)
         this.Accelerate();
     }
     if (arrowkeys.right.isDown) {
