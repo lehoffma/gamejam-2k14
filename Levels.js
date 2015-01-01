@@ -165,11 +165,11 @@ Level2.prototype.reset = function () {
 
 function Level3() {
 
-    this.joachimclapping = game.add.sprite(18000, 1100, "clapping");
+    this.joachimclapping = game.add.sprite(17000, 1100, "clapping");
     this.joachimclapping.animations.add("klatschen");
     this.joachimclapping.animations.play("klatschen", 8, true);
 
-    this.level = 2;
+    this.level = 3;
     // BACKGROUND COLOR
     game.stage.backgroundColor = '#1D1C49';
     // WORLD BOUNDS
